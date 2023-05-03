@@ -1,0 +1,64 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.login-hero {
+  margin: 0 4.2rem;
+  &__header {
+    color: $BA-black;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+  }
+  &__form {
+    @include flex(center, flex-start, column);
+    margin-top: 6rem;
+  }
+
+  &__input {
+    border: none;
+    height: 3rem;
+    border-bottom: 0.1rem solid $line-color;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2rem;
+
+    &::placeholder {
+      color: $BA-blue;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__div {
+    @include flex(center, center);
+    margin: 1rem auto;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__checkbox-text {
+    background: url(../../assets/icons/Checkbox.svg) no-repeat;
+    background-position: right;
+    padding-right: 2rem;
+  }
+
+  &__button {
+    background-color: $button;
+    color: white;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    height: 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  &__text {
+    color: $BA-blue;
+  }
+
+  &__register {
+    @include flex(center, center);
+    border: solid 0.1rem $BA-black;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+}

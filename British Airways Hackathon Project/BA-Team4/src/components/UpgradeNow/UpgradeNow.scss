@@ -1,0 +1,19 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.upgrade-now {
+  background-color: $BA-blue;
+  @include flex(center, center);
+  position: relative;
+  height: 4rem;
+  width: 90%;
+  border-radius: 2rem;
+  bottom: -1rem;
+  left: 2rem;
+  z-index: 30;
+
+  &__text {
+    color: white;
+    margin: 0 auto;
+  }
+}

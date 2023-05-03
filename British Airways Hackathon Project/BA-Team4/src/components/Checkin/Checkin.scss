@@ -1,0 +1,20 @@
+.checkin {
+  &__header {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__text-box {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  &__li {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+}

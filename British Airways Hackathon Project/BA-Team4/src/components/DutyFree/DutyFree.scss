@@ -1,0 +1,84 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.duty-free {
+  background: url(../../assets/images/dutyfree.svg) no-repeat;
+  background-size: 400%;
+  background-position: center;
+  z-index: 10;
+  height: 102vh;
+  position: relative;
+  bottom: 6rem;
+
+  &__modal {
+    @include flex(space-evenly, center, row);
+    z-index: 20;
+    position: relative;
+    bottom: 40rem;
+  }
+
+  &__modal-article {
+    height: 14rem;
+    width: 7.2rem;
+    @include flex(center, center, column);
+    background-color: white;
+  }
+
+  &__brand {
+    border-bottom: solid 0.1rem black;
+    height: 4rem;
+    width: 100%;
+    padding: 0.7rem 1.7rem;
+    @include flex(center, center, column);
+  }
+
+  &__brand-image {
+    position: relative;
+    top: 0.5rem;
+  }
+
+  &__points {
+    padding: 0.7rem 0.9rem;
+    position: relative;
+    bottom: 2rem;
+  }
+
+  &__logo {
+    height: 5.6rem;
+    width: 100%;
+  }
+
+  &__points-text {
+    font-size: 1.1rem;
+  }
+
+  &__line-to {
+    width: 1rem;
+    background-color: white;
+
+    &--1 {
+      height: 5rem;
+    }
+    &--2 {
+      height: 3rem;
+    }
+    &--3 {
+      height: 4rem;
+    }
+  }
+
+  &__dot-box {
+    @include flex(space-evenly);
+    position: relative;
+    top: 40rem;
+    z-index: 20;
+    width: 100%;
+  }
+
+  &__dot {
+    background-color: white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+  }
+}

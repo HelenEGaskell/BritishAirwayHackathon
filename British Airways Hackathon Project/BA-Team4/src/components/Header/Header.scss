@@ -1,0 +1,10 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+  @include flex(space-between);
+  padding: 2rem 2.5rem;
+  &__menu {
+    cursor: pointer;
+  }
+}
